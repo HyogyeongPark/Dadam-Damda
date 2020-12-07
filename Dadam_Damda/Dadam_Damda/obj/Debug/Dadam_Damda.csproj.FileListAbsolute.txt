@@ -1,0 +1,12 @@
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\bin\Debug\Dadam_Damda.exe.config
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\bin\Debug\Dadam_Damda.exe
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\bin\Debug\Dadam_Damda.pdb
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.DadamMainForm.resources
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.Properties.Resources.resources
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.UserControl_DadamHome.resources
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.UserControl_DadamLookup.resources
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.UserControl_DadamRequest.resources
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.csproj.GenerateResource.cache
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.csproj.CoreCompileInputs.cache
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.exe
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.pdb

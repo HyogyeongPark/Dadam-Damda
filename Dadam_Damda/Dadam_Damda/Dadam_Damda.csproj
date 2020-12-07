@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -54,6 +55,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControl_DadamHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_DadamHome.Designer.cs">
+      <DependentUpon>UserControl_DadamHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_DadamLookup.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_DadamLookup.Designer.cs">
+      <DependentUpon>UserControl_DadamLookup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_DadamRequest.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_DadamRequest.Designer.cs">
+      <DependentUpon>UserControl_DadamRequest.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="DadamMainForm.resx">
       <DependentUpon>DadamMainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -65,7 +84,17 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UserControl_DadamHome.resx">
+      <DependentUpon>UserControl_DadamHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_DadamLookup.resx">
+      <DependentUpon>UserControl_DadamLookup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_DadamRequest.resx">
+      <DependentUpon>UserControl_DadamRequest.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -78,6 +107,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home-white25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\receipt-white25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-white25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Koryong face-png2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\다담창의센터 로고-175px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\다담창의센터 로고-200x67.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KORYONG.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Koryong-127px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
