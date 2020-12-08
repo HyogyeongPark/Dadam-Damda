@@ -132,5 +132,14 @@
   <ItemGroup>
     <None Include="Resources\Koryong-127px.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-white25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-white251.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-white25.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

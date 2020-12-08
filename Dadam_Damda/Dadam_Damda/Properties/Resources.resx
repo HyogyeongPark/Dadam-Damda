@@ -118,14 +118,20 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Koryong-127px" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Koryong-127px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="다담창의센터 로고-175px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\다담창의센터 로고-175px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="home-white25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\home-white25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="receipt-white25" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\receipt-white25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="home-white25" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\home-white25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add-white25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add-white25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Koryong face-png2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Koryong face-png2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -139,7 +145,10 @@
   <data name="KORYONG" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KORYONG.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Koryong-127px" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Koryong-127px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="add-white251" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\add-white251.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="delete-white25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\delete-white25.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

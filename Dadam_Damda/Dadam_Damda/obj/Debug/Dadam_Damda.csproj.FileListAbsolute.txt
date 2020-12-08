@@ -10,3 +10,4 @@ D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.csproj.Generate
 D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.csproj.CoreCompileInputs.cache
 D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.exe
 D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.pdb
+D:\Git\Dadam-Damda\Dadam_Damda\Dadam_Damda\obj\Debug\Dadam_Damda.csprojAssemblyReference.cache

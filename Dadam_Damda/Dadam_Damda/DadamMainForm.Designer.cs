@@ -33,24 +33,26 @@ namespace Dadam_Damda
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DadamMainForm));
             this.Panel_MainMenu = new System.Windows.Forms.Panel();
             this.Panel_MainMenuButton = new System.Windows.Forms.Panel();
-            this.Panel_DadamLogo = new System.Windows.Forms.Panel();
-            this.Panel_MainLogo = new System.Windows.Forms.Panel();
-            this.Label_Dadam2 = new System.Windows.Forms.Label();
-            this.Label_Dadam1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.Button_Main_Request = new System.Windows.Forms.Button();
             this.Button_Main_Lookup = new System.Windows.Forms.Button();
             this.Button_Main_Home = new System.Windows.Forms.Button();
+            this.Panel_DadamLogo = new System.Windows.Forms.Panel();
             this.PictureBox_DadamLogo = new System.Windows.Forms.PictureBox();
+            this.Panel_MainLogo = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.userControl_DadamRequest1 = new Dadam_Damda.UserControl_DadamRequest();
+            this.Label_Dadam2 = new System.Windows.Forms.Label();
+            this.Label_Dadam1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.UserControl_DadamRequest = new Dadam_Damda.UserControl_DadamRequest();
+            this.UserControl_DadamHome = new Dadam_Damda.UserControl_DadamHome();
+            this.UserControl_DadamLookup = new Dadam_Damda.UserControl_DadamLookup();
             this.Panel_MainMenu.SuspendLayout();
             this.Panel_MainMenuButton.SuspendLayout();
             this.Panel_DadamLogo.SuspendLayout();
-            this.Panel_MainLogo.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox_DadamLogo)).BeginInit();
+            this.Panel_MainLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Panel_MainMenu
@@ -76,59 +78,6 @@ namespace Dadam_Damda
             this.Panel_MainMenuButton.Name = "Panel_MainMenuButton";
             this.Panel_MainMenuButton.Size = new System.Drawing.Size(178, 865);
             this.Panel_MainMenuButton.TabIndex = 1;
-            // 
-            // Panel_DadamLogo
-            // 
-            this.Panel_DadamLogo.BackColor = System.Drawing.Color.White;
-            this.Panel_DadamLogo.Controls.Add(this.PictureBox_DadamLogo);
-            this.Panel_DadamLogo.Location = new System.Drawing.Point(0, 811);
-            this.Panel_DadamLogo.Name = "Panel_DadamLogo";
-            this.Panel_DadamLogo.Size = new System.Drawing.Size(178, 56);
-            this.Panel_DadamLogo.TabIndex = 2;
-            this.Panel_DadamLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_DadamLogo_Paint);
-            // 
-            // Panel_MainLogo
-            // 
-            this.Panel_MainLogo.BackColor = System.Drawing.Color.White;
-            this.Panel_MainLogo.Controls.Add(this.pictureBox1);
-            this.Panel_MainLogo.Controls.Add(this.Label_Dadam2);
-            this.Panel_MainLogo.Controls.Add(this.Label_Dadam1);
-            this.Panel_MainLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Panel_MainLogo.Location = new System.Drawing.Point(0, 0);
-            this.Panel_MainLogo.Name = "Panel_MainLogo";
-            this.Panel_MainLogo.Size = new System.Drawing.Size(178, 143);
-            this.Panel_MainLogo.TabIndex = 0;
-            // 
-            // Label_Dadam2
-            // 
-            this.Label_Dadam2.AutoSize = true;
-            this.Label_Dadam2.Font = new System.Drawing.Font("나눔스퀘어 ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_Dadam2.ForeColor = System.Drawing.Color.Black;
-            this.Label_Dadam2.Location = new System.Drawing.Point(97, 102);
-            this.Label_Dadam2.Name = "Label_Dadam2";
-            this.Label_Dadam2.Size = new System.Drawing.Size(72, 23);
-            this.Label_Dadam2.TabIndex = 1;
-            this.Label_Dadam2.Text = "을 담다";
-            // 
-            // Label_Dadam1
-            // 
-            this.Label_Dadam1.AutoSize = true;
-            this.Label_Dadam1.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Dadam1.Font = new System.Drawing.Font("나눔스퀘어 ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_Dadam1.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Label_Dadam1.Location = new System.Drawing.Point(11, 102);
-            this.Label_Dadam1.Name = "Label_Dadam1";
-            this.Label_Dadam1.Size = new System.Drawing.Size(86, 23);
-            this.Label_Dadam1.TabIndex = 0;
-            this.Label_Dadam1.Text = "DADAM";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.userControl_DadamRequest1);
-            this.panel1.Location = new System.Drawing.Point(175, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1090, 1010);
-            this.panel1.TabIndex = 2;
             // 
             // Button_Main_Request
             // 
@@ -175,6 +124,16 @@ namespace Dadam_Damda
             this.Button_Main_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Button_Main_Home.UseVisualStyleBackColor = true;
             // 
+            // Panel_DadamLogo
+            // 
+            this.Panel_DadamLogo.BackColor = System.Drawing.Color.White;
+            this.Panel_DadamLogo.Controls.Add(this.PictureBox_DadamLogo);
+            this.Panel_DadamLogo.Location = new System.Drawing.Point(0, 811);
+            this.Panel_DadamLogo.Name = "Panel_DadamLogo";
+            this.Panel_DadamLogo.Size = new System.Drawing.Size(178, 56);
+            this.Panel_DadamLogo.TabIndex = 2;
+            this.Panel_DadamLogo.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel_DadamLogo_Paint);
+            // 
             // PictureBox_DadamLogo
             // 
             this.PictureBox_DadamLogo.BackColor = System.Drawing.Color.White;
@@ -188,6 +147,18 @@ namespace Dadam_Damda
             this.PictureBox_DadamLogo.TabIndex = 2;
             this.PictureBox_DadamLogo.TabStop = false;
             // 
+            // Panel_MainLogo
+            // 
+            this.Panel_MainLogo.BackColor = System.Drawing.Color.White;
+            this.Panel_MainLogo.Controls.Add(this.pictureBox1);
+            this.Panel_MainLogo.Controls.Add(this.Label_Dadam2);
+            this.Panel_MainLogo.Controls.Add(this.Label_Dadam1);
+            this.Panel_MainLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Panel_MainLogo.Location = new System.Drawing.Point(0, 0);
+            this.Panel_MainLogo.Name = "Panel_MainLogo";
+            this.Panel_MainLogo.Size = new System.Drawing.Size(178, 143);
+            this.Panel_MainLogo.TabIndex = 0;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Dadam_Damda.Properties.Resources.Koryong_face_png2;
@@ -200,14 +171,63 @@ namespace Dadam_Damda
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
-            // userControl_DadamRequest1
+            // Label_Dadam2
             // 
-            this.userControl_DadamRequest1.BackColor = System.Drawing.Color.White;
-            this.userControl_DadamRequest1.Location = new System.Drawing.Point(0, -2);
-            this.userControl_DadamRequest1.Name = "userControl_DadamRequest1";
-            this.userControl_DadamRequest1.Size = new System.Drawing.Size(1090, 1010);
-            this.userControl_DadamRequest1.TabIndex = 0;
-            this.userControl_DadamRequest1.Load += new System.EventHandler(this.userControl_DadamRequest1_Load);
+            this.Label_Dadam2.AutoSize = true;
+            this.Label_Dadam2.Font = new System.Drawing.Font("나눔스퀘어 ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Dadam2.ForeColor = System.Drawing.Color.Black;
+            this.Label_Dadam2.Location = new System.Drawing.Point(97, 102);
+            this.Label_Dadam2.Name = "Label_Dadam2";
+            this.Label_Dadam2.Size = new System.Drawing.Size(72, 23);
+            this.Label_Dadam2.TabIndex = 1;
+            this.Label_Dadam2.Text = "을 담다";
+            // 
+            // Label_Dadam1
+            // 
+            this.Label_Dadam1.AutoSize = true;
+            this.Label_Dadam1.BackColor = System.Drawing.Color.Transparent;
+            this.Label_Dadam1.Font = new System.Drawing.Font("나눔스퀘어 ExtraBold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Dadam1.ForeColor = System.Drawing.Color.OrangeRed;
+            this.Label_Dadam1.Location = new System.Drawing.Point(11, 102);
+            this.Label_Dadam1.Name = "Label_Dadam1";
+            this.Label_Dadam1.Size = new System.Drawing.Size(86, 23);
+            this.Label_Dadam1.TabIndex = 0;
+            this.Label_Dadam1.Text = "DADAM";
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.UserControl_DadamRequest);
+            this.panel1.Controls.Add(this.UserControl_DadamHome);
+            this.panel1.Controls.Add(this.UserControl_DadamLookup);
+            this.panel1.Location = new System.Drawing.Point(175, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1090, 1010);
+            this.panel1.TabIndex = 2;
+            // 
+            // UserControl_DadamRequest
+            // 
+            this.UserControl_DadamRequest.BackColor = System.Drawing.Color.White;
+            this.UserControl_DadamRequest.Location = new System.Drawing.Point(0, -2);
+            this.UserControl_DadamRequest.Name = "UserControl_DadamRequest";
+            this.UserControl_DadamRequest.Size = new System.Drawing.Size(1090, 1010);
+            this.UserControl_DadamRequest.TabIndex = 0;
+            this.UserControl_DadamRequest.Load += new System.EventHandler(this.UserControl_DadamRequest_Load);
+            // 
+            // UserControl_DadamHome
+            // 
+            this.UserControl_DadamHome.BackColor = System.Drawing.Color.White;
+            this.UserControl_DadamHome.Location = new System.Drawing.Point(3, -3);
+            this.UserControl_DadamHome.Name = "UserControl_DadamHome";
+            this.UserControl_DadamHome.Size = new System.Drawing.Size(1090, 1010);
+            this.UserControl_DadamHome.TabIndex = 1;
+            // 
+            // UserControl_DadamLookup
+            // 
+            this.UserControl_DadamLookup.BackColor = System.Drawing.Color.White;
+            this.UserControl_DadamLookup.Location = new System.Drawing.Point(0, 0);
+            this.UserControl_DadamLookup.Name = "UserControl_DadamLookup";
+            this.UserControl_DadamLookup.Size = new System.Drawing.Size(1090, 1010);
+            this.UserControl_DadamLookup.TabIndex = 2;
             // 
             // DadamMainForm
             // 
@@ -223,11 +243,11 @@ namespace Dadam_Damda
             this.Panel_MainMenu.ResumeLayout(false);
             this.Panel_MainMenuButton.ResumeLayout(false);
             this.Panel_DadamLogo.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_DadamLogo)).EndInit();
             this.Panel_MainLogo.ResumeLayout(false);
             this.Panel_MainLogo.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.PictureBox_DadamLogo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -246,6 +266,8 @@ namespace Dadam_Damda
         private System.Windows.Forms.PictureBox PictureBox_DadamLogo;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
-        private UserControl_DadamRequest userControl_DadamRequest1;
+        private UserControl_DadamRequest UserControl_DadamRequest;
+        private UserControl_DadamHome UserControl_DadamHome;
+        private UserControl_DadamLookup UserControl_DadamLookup;
     }
 }
