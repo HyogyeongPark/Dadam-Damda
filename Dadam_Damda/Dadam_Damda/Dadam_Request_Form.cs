@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.Drawing;
 using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,36 +12,15 @@ using MySql.Data.MySqlClient;
 
 namespace Dadam_Damda
 {
-    public partial class UserControl_DadamRequest : UserControl
+    public partial class Dadam_Request_Form : Form
     {
-        // Control의 부모에게 전달할 Event Delegate
-        public delegate int delEvent(object sender, string strText); // delegate 선언
-        public event delEvent eventdelSender;   // delegate event 선언
-
-        MySqlConnection connection =
-            new MySqlConnection("Server=localhost; Port=3306;" +
-                "Database=dadam_request;" +
-                "Uid=root;" +
-                "Pwd=0000;");   // 서버, DB이름, 유저이름, 비밀번호
-
-        public class RequestInfo
-        {
-            //UserInfo
-            public static string strMajor = "";
-            public static string strPosition = "";
-
-            public static string strEquipmentName = "";
-            public static string strMaterialOwn = "";
-            public static string strRequestCategory = "";
-        }
-
-        public UserControl_DadamRequest()
+        public Dadam_Request_Form()
         {
             InitializeComponent();
-            // user control을 불러 올 때, 신청 일자에 대한 Text 박스에 현재 날짜를 넣는다.
+            // 불러 올 때, 신청 일자에 대한 Text 박스에 현재 날짜를 넣는다.
             this.Label_Request_DateTime.Text = DateTime.Now.ToShortDateString();
 
-            // user control을 불러 올 때, 제작 희망 기간에 대한 Date Time Picker의 디폴트값은 현재로부터 7일 후이다.
+            //  불러 올 때, 제작 희망 기간에 대한 Date Time Picker의 디폴트값은 현재로부터 7일 후이다.
             DateTimePicker_Request_Item_Date.Value = DateTime.Now.AddDays(7);
 
 
@@ -72,42 +51,33 @@ namespace Dadam_Damda
             {
                 MessageBox.Show(ex.Message);
             }
-
         }
 
-        private void UserControl_DadamRequest_Load(object sender, EventArgs e)
+        // Control의 부모에게 전달할 Event Delegate
+        public delegate int delEvent(object sender, string strText); // delegate 선언
+        public event delEvent eventdelSender;   // delegate event 선언
+
+        MySqlConnection connection =
+            new MySqlConnection("Server=localhost; Port=3306;" +
+                "Database=dadam_request;" +
+                "Uid=root;" +
+                "Pwd=0000;");   // 서버, DB이름, 유저이름, 비밀번호
+
+        public class RequestInfo
         {
-          
+            //UserInfo
+            public static string strMajor = "";
+            public static string strPosition = "";
+
+            public static string strEquipmentName = "";
+            public static string strMaterialOwn = "";
+            public static string strRequestCategory = "";
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GroupBox_Request_EquipmentInfo_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GroupBox_Request_ItemInfo_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TableLayoutPanel_Request_Person_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+      
         /********   UserInfo에 해당하는 부분을 DB로 넘기기 ********/
         // 소속 학부 정보 리스트 박스 이벤트
-        private void ListBox_Request_User_Major_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListBox_Request_User_Major_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             // 리스트 아이템 중 선택된 아이템 SelectedItem을 .ToString()을 사용하여 string으로 캐스팅 후 변수에 저장
             if (ListBox_Request_User_Major.SelectedItem != null)
@@ -117,7 +87,7 @@ namespace Dadam_Damda
         }
 
         // 신분 정보 리스트 박스 이벤트
-        private void ListBox_Request_User_Position_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListBox_Request_User_Position_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             // 리스트 아이템 중 선택된 아이템 SelectedItem을 .ToString()을 사용하여 string으로 캐스팅 후 변수에 저장
             if (ListBox_Request_User_Position.SelectedItem != null)
@@ -127,7 +97,7 @@ namespace Dadam_Damda
         }
 
         // 사용 장비 리스트 박스 이벤트
-        private void ListBox_Request_Equipment_Name_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListBox_Request_Equipment_Name_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             // 리스트 아이템 중 선택된 아이템 SelectedItem을 .ToString()을 사용하여 string으로 캐스팅 후 변수에 저장
             if (ListBox_Request_Equipment_Name.SelectedItem != null)
@@ -147,7 +117,7 @@ namespace Dadam_Damda
         }
 
         // 사용 분류에 대한 리스트 박스 이벤트
-        private void ListBox_Request_UseCategory_SelectedIndexChanged(object sender, EventArgs e)
+        private void ListBox_Request_UseCategory_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             // 리스트 아이템 중 선택된 아이템 SelectedItem을 .ToString()을 사용하여 string으로 캐스팅 후 변수에 저장
             if (ListBox_Request_UseCategory.SelectedItem != null)
@@ -158,14 +128,14 @@ namespace Dadam_Damda
 
         // 가공 제작 희망 일자 Date Time Picker의 내용이 변경되었을 경우
 
-        private void DateTimePicker_Request_Item_Date_ValueChanged(object sender, EventArgs e)
+        private void DateTimePicker_Request_Item_Date_ValueChanged_1(object sender, EventArgs e)
         {
             DateTime dt1 = DateTimePicker_Request_Item_Date.Value;
             string dt = dt1.ToString("yyyy.MM.dd. (dddd)");
         }
 
         // 신청 완료 버튼 눌렀을 때 이벤트
-        private void Button_Request_Add_Click(object sender, EventArgs e)
+        private void Button_Request_Add_Click_1(object sender, EventArgs e)
         {
             // 칼럼에 추가하는 커리문 insertQuery
             // user 테이블의 항목들의 값을 추가한다, 이때 값은 TextBox, ListBox로부터 온 것이다. (Text박스는 따로 변수 추가x)
@@ -175,14 +145,14 @@ namespace Dadam_Damda
 
             string insertQueryEquipmentInfo = "INSERT INTO equipment(equipment_name) " +
                 "VALUES('" + RequestInfo.strEquipmentName + "')\n";
-    
-            string insertQueryItemInfo =  "INSERT INTO item(item_material, item_num, item_piece, item_own) " +
-                "VALUES('" +RichTextBox_Request_Item_Material.Text + "','" +TextBox_Request_Item_Num.Text + "','" +
+
+            string insertQueryItemInfo = "INSERT INTO item(item_material, item_num, item_piece, item_own) " +
+                "VALUES('" + RichTextBox_Request_Item_Material.Text + "','" + TextBox_Request_Item_Num.Text + "','" +
                 TextBox_Request_Item_Piece.Text + "','" + RequestInfo.strMaterialOwn + "')\n";
 
             string insertQueryRequestInfo = "INSERT INTO request(request_date, request_category, request_purpose, request_hopeDate, request_ps) " +
                 "VALUES('" + Label_Request_DateTime.Text + "','" + RequestInfo.strRequestCategory + "','" + RichTextBox_Request_UsePurpose.Text + "','" +
-                DateTimePicker_Request_Item_Date.Text+ "','" + RichTextBox_Request_Item_PSText.Text + "')\n";
+                DateTimePicker_Request_Item_Date.Text + "','" + RichTextBox_Request_Item_PSText.Text + "')\n";
 
 
             string insertQuery = "INSERT INTO request_all " +
@@ -191,10 +161,10 @@ namespace Dadam_Damda
                 "item_material, item_own, item_num, item_piece, " +
                 "user_id, user_name, user_phone, user_major, user_position )" +
                 "VALUES" +
-                "('"+ Label_Request_Id.Text + "','" + Label_Request_DateTime.Text + "','" + RequestInfo.strRequestCategory + "','" + RichTextBox_Request_UsePurpose.Text + "','" + DateTimePicker_Request_Item_Date.Text + "','"+RichTextBox_Request_Item_PSText.Text 
-                + "','" + RequestInfo.strEquipmentName 
-                + "','" + RichTextBox_Request_Item_Material.Text + "','" + RequestInfo.strMaterialOwn + "','" + TextBox_Request_Item_Num.Text + "','" + TextBox_Request_Item_Piece.Text 
-                + "','" + TextBox_Request_User_Id.Text + "','" + TextBox_Request_User_Name.Text + "','" + TextBox_Request_User_PhoneNum.Text + "','" + RequestInfo.strMajor + "','" + RequestInfo.strPosition +"')";
+                "('" + Label_Request_Id.Text + "','" + Label_Request_DateTime.Text + "','" + RequestInfo.strRequestCategory + "','" + RichTextBox_Request_UsePurpose.Text + "','" + DateTimePicker_Request_Item_Date.Text + "','" + RichTextBox_Request_Item_PSText.Text
+                + "','" + RequestInfo.strEquipmentName
+                + "','" + RichTextBox_Request_Item_Material.Text + "','" + RequestInfo.strMaterialOwn + "','" + TextBox_Request_Item_Num.Text + "','" + TextBox_Request_Item_Piece.Text
+                + "','" + TextBox_Request_User_Id.Text + "','" + TextBox_Request_User_Name.Text + "','" + TextBox_Request_User_PhoneNum.Text + "','" + RequestInfo.strMajor + "','" + RequestInfo.strPosition + "')";
 
             /*string inserQuery = "INSERT ALL" +
                 "INTO user(user_id, user_name, user_phone, user_major, user_position) " +
@@ -246,9 +216,6 @@ namespace Dadam_Damda
             }
 
             connection.Close();
-
         }
-
-       
     }
 }
