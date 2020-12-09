@@ -1,0 +1,65 @@
+DB 테이블 생성
+
+# user
+CREATE TABLE `dadam_request`.`user` (
+`user_id` `user_id` VARCHAR(11) NOT NULL ,
+`user_name` `user_name` VARCHAR(20) NOT NULL ,
+`user_major` `user_major` VARCHAR(20) NOT NULL ,
+`user_position` `user_position` VARCHAR(20) NULL ,
+`user_phone` VARCHAR(13) NOT NULL,
+ADD PRIMARY KEY (`user_id`));
+
+# equipment
+CREATE TABLE `dadam_request`.`equipment` (
+`equipment_id` INT NOT NULL AUTO_INCREMENT ;
+'equipment_name' VARTCHAR(20) NOT NULL
+PRIMARY KEY('equipment_id')
+);
+
+# item
+CREATE TABLE `dadam_request`.`item` (
+  `item_id` INT NOT NULL AUTO_INCREMENT,
+  `item_material` VARCHAR(45) NOT NULL,
+  `item_own` VARCHAR(20) NULL,
+  `item_num` INT NOT NULL,
+  `item_piece` INT NOT NULL,
+  PRIMARY KEY (`item_id`));
+
+
+# request
+CREATE TABLE `dadam_request`.`request` (
+  `request_id` INT NOT NULL AUTO_INCREMENT,
+  `request_date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `request_category` VARCHAR(20) NOT NULL,
+  `request_purpose` VARCHAR(20) NOT NULL,
+  `request_hopeDate` DATETIME NULL,
+  `request_user_id` VARCHAR(11) NOT NULL,
+  `request_equipment_id` INT NOT NULL,
+  `request_item_id` INT NOT NULL,
+  PRIMARY KEY (`request_id`));
+
+// 외래키 추가
+ALTER TABLE `dadam_request`.`request` 
+ADD INDEX `FK_request_equipment_id_idx` (`request_equipment_id` ASC) VISIBLE;
+;
+ALTER TABLE `dadam_request`.`request` 
+ADD CONSTRAINT `FK_request_user_id`
+  FOREIGN KEY (`request_user_id`)
+  REFERENCES `dadam_request`.`user` (`user_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `FK_request_item_id`
+  FOREIGN KEY (`request_item_id`)
+  REFERENCES `dadam_request`.`item` (`item_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION,
+ADD CONSTRAINT `FK_request_equipment_id`
+  FOREIGN KEY (`request_equipment_id`)
+  REFERENCES `dadam_request`.`equipment` (`equipment_id`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8;
+

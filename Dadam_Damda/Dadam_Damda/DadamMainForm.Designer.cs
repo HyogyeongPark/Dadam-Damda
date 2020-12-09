@@ -93,6 +93,7 @@ namespace Dadam_Damda
             this.Button_Main_Request.Text = "REQUEST";
             this.Button_Main_Request.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Button_Main_Request.UseVisualStyleBackColor = true;
+            this.Button_Main_Request.Click += new System.EventHandler(this.Button_Main_Request_Click);
             // 
             // Button_Main_Lookup
             // 
@@ -108,6 +109,7 @@ namespace Dadam_Damda
             this.Button_Main_Lookup.Text = "LOOK UP";
             this.Button_Main_Lookup.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Button_Main_Lookup.UseVisualStyleBackColor = true;
+            this.Button_Main_Lookup.Click += new System.EventHandler(this.Button_Main_Lookup_Click);
             // 
             // Button_Main_Home
             // 
@@ -123,6 +125,7 @@ namespace Dadam_Damda
             this.Button_Main_Home.Text = "HOME";
             this.Button_Main_Home.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.Button_Main_Home.UseVisualStyleBackColor = true;
+            this.Button_Main_Home.Click += new System.EventHandler(this.Button_Main_Home_Click);
             // 
             // Panel_DadamLogo
             // 
@@ -196,9 +199,9 @@ namespace Dadam_Damda
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.UserControl_DadamRequest);
             this.panel1.Controls.Add(this.UserControl_DadamHome);
             this.panel1.Controls.Add(this.UserControl_DadamLookup);
+            this.panel1.Controls.Add(this.UserControl_DadamRequest);
             this.panel1.Location = new System.Drawing.Point(175, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1090, 1010);
@@ -207,7 +210,7 @@ namespace Dadam_Damda
             // UserControl_DadamRequest
             // 
             this.UserControl_DadamRequest.BackColor = System.Drawing.Color.White;
-            this.UserControl_DadamRequest.Location = new System.Drawing.Point(0, -2);
+            this.UserControl_DadamRequest.Location = new System.Drawing.Point(-3, 0);
             this.UserControl_DadamRequest.Name = "UserControl_DadamRequest";
             this.UserControl_DadamRequest.Size = new System.Drawing.Size(1090, 1010);
             this.UserControl_DadamRequest.TabIndex = 0;
@@ -216,9 +219,9 @@ namespace Dadam_Damda
             // UserControl_DadamHome
             // 
             this.UserControl_DadamHome.BackColor = System.Drawing.Color.White;
-            this.UserControl_DadamHome.Location = new System.Drawing.Point(3, -3);
+            this.UserControl_DadamHome.Location = new System.Drawing.Point(0, -3);
             this.UserControl_DadamHome.Name = "UserControl_DadamHome";
-            this.UserControl_DadamHome.Size = new System.Drawing.Size(1090, 1010);
+            this.UserControl_DadamHome.Size = new System.Drawing.Size(1093, 1010);
             this.UserControl_DadamHome.TabIndex = 1;
             // 
             // UserControl_DadamLookup

@@ -28,28 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.TextBox_RequestNum = new System.Windows.Forms.TextBox();
+            this.TextBox_Request_Num = new System.Windows.Forms.TextBox();
             this.Panel_Request_Num = new System.Windows.Forms.Panel();
-            this.TextBox_RequestDate = new System.Windows.Forms.TextBox();
-            this.Label_RequestDate = new System.Windows.Forms.Label();
-            this.Label_RequestNum = new System.Windows.Forms.Label();
+            this.Label_Request_Date = new System.Windows.Forms.Label();
+            this.Label_Request_Num = new System.Windows.Forms.Label();
             this.GroupBox_Request_PersonInfo = new System.Windows.Forms.GroupBox();
             this.TableLayoutPanel_Request_Person = new System.Windows.Forms.TableLayoutPanel();
-            this.Label_Request_PersonPosition = new System.Windows.Forms.Label();
-            this.ListBox_Request_PersonPosition = new System.Windows.Forms.ListBox();
-            this.Label_Request_PersonMajor = new System.Windows.Forms.Label();
-            this.Label_Request_PersonPhoneNum = new System.Windows.Forms.Label();
-            this.TextBox_Request_PersonPhoneNum = new System.Windows.Forms.TextBox();
-            this.Label_Request_PersonName = new System.Windows.Forms.Label();
-            this.TextBox_Request_PersonName = new System.Windows.Forms.TextBox();
-            this.ListBox_Request_PersonMajor = new System.Windows.Forms.ListBox();
+            this.Label_Request_User_Id = new System.Windows.Forms.Label();
+            this.TextBox_Request_User_Id = new System.Windows.Forms.TextBox();
+            this.Label_Request_User_Position = new System.Windows.Forms.Label();
+            this.ListBox_Request_User_Position = new System.Windows.Forms.ListBox();
+            this.Label_Request_User_Major = new System.Windows.Forms.Label();
+            this.Label_Request_User_PhoneNum = new System.Windows.Forms.Label();
+            this.TextBox_Request_User_PhoneNum = new System.Windows.Forms.TextBox();
+            this.Label_Request_User_Name = new System.Windows.Forms.Label();
+            this.TextBox_Request_User_Name = new System.Windows.Forms.TextBox();
+            this.ListBox_Request_User_Major = new System.Windows.Forms.ListBox();
             this.GroupBox_Request_EquipmentInfo = new System.Windows.Forms.GroupBox();
             this.TableLayoutPanel_Request_Equipment = new System.Windows.Forms.TableLayoutPanel();
             this.Label_Request_UsePurpose = new System.Windows.Forms.Label();
             this.Label_Request_UseCategory = new System.Windows.Forms.Label();
             this.ListBox_Request_UseCategory = new System.Windows.Forms.ListBox();
             this.Label_Request_EquipmentName = new System.Windows.Forms.Label();
-            this.ListBox_Request_EquipmentName = new System.Windows.Forms.ListBox();
+            this.ListBox_Request_Equipment_Name = new System.Windows.Forms.ListBox();
             this.RichTextBox_Request_UsePurpose = new System.Windows.Forms.RichTextBox();
             this.GroupBox_Request_ItemInfo = new System.Windows.Forms.GroupBox();
             this.TableLayoutPanel_Request_ItemInfo = new System.Windows.Forms.TableLayoutPanel();
@@ -69,6 +70,7 @@
             this.RichTextBox_Request_Item_PSText = new System.Windows.Forms.RichTextBox();
             this.Button_Request_Add = new System.Windows.Forms.Button();
             this.Button_Request_Cancel = new System.Windows.Forms.Button();
+            this.Label_Request_DateTime = new System.Windows.Forms.Label();
             this.Panel_Request_Num.SuspendLayout();
             this.GroupBox_Request_PersonInfo.SuspendLayout();
             this.TableLayoutPanel_Request_Person.SuspendLayout();
@@ -79,60 +81,48 @@
             this.Panel_Request_Item_Num.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TextBox_RequestNum
+            // TextBox_Request_Num
             // 
-            this.TextBox_RequestNum.BackColor = System.Drawing.Color.White;
-            this.TextBox_RequestNum.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_RequestNum.Font = new System.Drawing.Font("나눔스퀘어 Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.TextBox_RequestNum.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.TextBox_RequestNum.Location = new System.Drawing.Point(113, 13);
-            this.TextBox_RequestNum.Name = "TextBox_RequestNum";
-            this.TextBox_RequestNum.Size = new System.Drawing.Size(100, 22);
-            this.TextBox_RequestNum.TabIndex = 0;
-            this.TextBox_RequestNum.Text = "123";
+            this.TextBox_Request_Num.BackColor = System.Drawing.Color.White;
+            this.TextBox_Request_Num.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.TextBox_Request_Num.Font = new System.Drawing.Font("나눔스퀘어 Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TextBox_Request_Num.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.TextBox_Request_Num.Location = new System.Drawing.Point(113, 13);
+            this.TextBox_Request_Num.Name = "TextBox_Request_Num";
+            this.TextBox_Request_Num.Size = new System.Drawing.Size(100, 22);
+            this.TextBox_Request_Num.TabIndex = 0;
+            this.TextBox_Request_Num.Text = "123";
             // 
             // Panel_Request_Num
             // 
-            this.Panel_Request_Num.Controls.Add(this.TextBox_RequestDate);
-            this.Panel_Request_Num.Controls.Add(this.Label_RequestDate);
-            this.Panel_Request_Num.Controls.Add(this.Label_RequestNum);
-            this.Panel_Request_Num.Controls.Add(this.TextBox_RequestNum);
+            this.Panel_Request_Num.Controls.Add(this.Label_Request_DateTime);
+            this.Panel_Request_Num.Controls.Add(this.Label_Request_Date);
+            this.Panel_Request_Num.Controls.Add(this.Label_Request_Num);
+            this.Panel_Request_Num.Controls.Add(this.TextBox_Request_Num);
             this.Panel_Request_Num.Location = new System.Drawing.Point(46, 34);
             this.Panel_Request_Num.Name = "Panel_Request_Num";
             this.Panel_Request_Num.Size = new System.Drawing.Size(477, 46);
             this.Panel_Request_Num.TabIndex = 1;
             // 
-            // TextBox_RequestDate
+            // Label_Request_Date
             // 
-            this.TextBox_RequestDate.BackColor = System.Drawing.Color.White;
-            this.TextBox_RequestDate.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.TextBox_RequestDate.Font = new System.Drawing.Font("나눔스퀘어 Bold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.TextBox_RequestDate.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.TextBox_RequestDate.Location = new System.Drawing.Point(344, 12);
-            this.TextBox_RequestDate.Name = "TextBox_RequestDate";
-            this.TextBox_RequestDate.Size = new System.Drawing.Size(128, 22);
-            this.TextBox_RequestDate.TabIndex = 4;
-            this.TextBox_RequestDate.Text = "2020-12-08";
+            this.Label_Request_Date.AutoSize = true;
+            this.Label_Request_Date.Font = new System.Drawing.Font("나눔스퀘어 ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Request_Date.Location = new System.Drawing.Point(243, 12);
+            this.Label_Request_Date.Name = "Label_Request_Date";
+            this.Label_Request_Date.Size = new System.Drawing.Size(96, 21);
+            this.Label_Request_Date.TabIndex = 3;
+            this.Label_Request_Date.Text = "신청일자 : ";
             // 
-            // Label_RequestDate
+            // Label_Request_Num
             // 
-            this.Label_RequestDate.AutoSize = true;
-            this.Label_RequestDate.Font = new System.Drawing.Font("나눔스퀘어 ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_RequestDate.Location = new System.Drawing.Point(243, 12);
-            this.Label_RequestDate.Name = "Label_RequestDate";
-            this.Label_RequestDate.Size = new System.Drawing.Size(96, 21);
-            this.Label_RequestDate.TabIndex = 3;
-            this.Label_RequestDate.Text = "신청일자 : ";
-            // 
-            // Label_RequestNum
-            // 
-            this.Label_RequestNum.AutoSize = true;
-            this.Label_RequestNum.Font = new System.Drawing.Font("나눔스퀘어 ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_RequestNum.Location = new System.Drawing.Point(12, 13);
-            this.Label_RequestNum.Name = "Label_RequestNum";
-            this.Label_RequestNum.Size = new System.Drawing.Size(96, 21);
-            this.Label_RequestNum.TabIndex = 1;
-            this.Label_RequestNum.Text = "신청번호 : ";
+            this.Label_Request_Num.AutoSize = true;
+            this.Label_Request_Num.Font = new System.Drawing.Font("나눔스퀘어 ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Request_Num.Location = new System.Drawing.Point(12, 13);
+            this.Label_Request_Num.Name = "Label_Request_Num";
+            this.Label_Request_Num.Size = new System.Drawing.Size(96, 21);
+            this.Label_Request_Num.TabIndex = 1;
+            this.Label_Request_Num.Text = "신청번호 : ";
             // 
             // GroupBox_Request_PersonInfo
             // 
@@ -152,125 +142,174 @@
             this.TableLayoutPanel_Request_Person.ColumnCount = 2;
             this.TableLayoutPanel_Request_Person.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
             this.TableLayoutPanel_Request_Person.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 188F));
-            this.TableLayoutPanel_Request_Person.Controls.Add(this.Label_Request_PersonPosition, 0, 3);
-            this.TableLayoutPanel_Request_Person.Controls.Add(this.ListBox_Request_PersonPosition, 1, 3);
-            this.TableLayoutPanel_Request_Person.Controls.Add(this.Label_Request_PersonMajor, 0, 2);
-            this.TableLayoutPanel_Request_Person.Controls.Add(this.Label_Request_PersonPhoneNum, 0, 1);
-            this.TableLayoutPanel_Request_Person.Controls.Add(this.TextBox_Request_PersonPhoneNum, 1, 1);
-            this.TableLayoutPanel_Request_Person.Controls.Add(this.Label_Request_PersonName, 0, 0);
-            this.TableLayoutPanel_Request_Person.Controls.Add(this.TextBox_Request_PersonName, 1, 0);
-            this.TableLayoutPanel_Request_Person.Controls.Add(this.ListBox_Request_PersonMajor, 1, 2);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.Label_Request_User_Id, 0, 0);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.TextBox_Request_User_Id, 1, 0);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.Label_Request_User_Position, 0, 4);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.ListBox_Request_User_Position, 1, 4);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.Label_Request_User_Major, 0, 3);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.Label_Request_User_PhoneNum, 0, 2);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.TextBox_Request_User_PhoneNum, 1, 2);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.Label_Request_User_Name, 0, 1);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.TextBox_Request_User_Name, 1, 1);
+            this.TableLayoutPanel_Request_Person.Controls.Add(this.ListBox_Request_User_Major, 1, 3);
             this.TableLayoutPanel_Request_Person.Location = new System.Drawing.Point(16, 68);
             this.TableLayoutPanel_Request_Person.Name = "TableLayoutPanel_Request_Person";
-            this.TableLayoutPanel_Request_Person.RowCount = 4;
+            this.TableLayoutPanel_Request_Person.RowCount = 5;
             this.TableLayoutPanel_Request_Person.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 41F));
             this.TableLayoutPanel_Request_Person.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.TableLayoutPanel_Request_Person.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 341F));
-            this.TableLayoutPanel_Request_Person.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 351F));
+            this.TableLayoutPanel_Request_Person.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 39F));
+            this.TableLayoutPanel_Request_Person.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 345F));
+            this.TableLayoutPanel_Request_Person.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 310F));
             this.TableLayoutPanel_Request_Person.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TableLayoutPanel_Request_Person.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.TableLayoutPanel_Request_Person.Size = new System.Drawing.Size(247, 775);
             this.TableLayoutPanel_Request_Person.TabIndex = 1;
             this.TableLayoutPanel_Request_Person.Paint += new System.Windows.Forms.PaintEventHandler(this.TableLayoutPanel_Request_Person_Paint);
             // 
-            // Label_Request_PersonPosition
+            // Label_Request_User_Id
             // 
-            this.Label_Request_PersonPosition.AutoSize = true;
-            this.Label_Request_PersonPosition.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Request_PersonPosition.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Label_Request_PersonPosition.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_Request_PersonPosition.Location = new System.Drawing.Point(3, 424);
-            this.Label_Request_PersonPosition.Name = "Label_Request_PersonPosition";
-            this.Label_Request_PersonPosition.Size = new System.Drawing.Size(53, 351);
-            this.Label_Request_PersonPosition.TabIndex = 6;
-            this.Label_Request_PersonPosition.Text = "신분";
-            this.Label_Request_PersonPosition.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label_Request_User_Id.AutoSize = true;
+            this.Label_Request_User_Id.BackColor = System.Drawing.Color.Transparent;
+            this.Label_Request_User_Id.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Label_Request_User_Id.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Request_User_Id.Location = new System.Drawing.Point(3, 0);
+            this.Label_Request_User_Id.Name = "Label_Request_User_Id";
+            this.Label_Request_User_Id.Size = new System.Drawing.Size(53, 41);
+            this.Label_Request_User_Id.TabIndex = 6;
+            this.Label_Request_User_Id.Text = "학번";
+            this.Label_Request_User_Id.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ListBox_Request_PersonPosition
+            // TextBox_Request_User_Id
             // 
-            this.ListBox_Request_PersonPosition.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ListBox_Request_PersonPosition.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ListBox_Request_PersonPosition.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ListBox_Request_PersonPosition.ForeColor = System.Drawing.Color.Black;
-            this.ListBox_Request_PersonPosition.FormattingEnabled = true;
-            this.ListBox_Request_PersonPosition.ItemHeight = 18;
-            this.ListBox_Request_PersonPosition.Location = new System.Drawing.Point(62, 427);
-            this.ListBox_Request_PersonPosition.Name = "ListBox_Request_PersonPosition";
-            this.ListBox_Request_PersonPosition.Size = new System.Drawing.Size(182, 345);
-            this.ListBox_Request_PersonPosition.TabIndex = 7;
+            this.TextBox_Request_User_Id.BackColor = System.Drawing.SystemColors.Window;
+            this.TextBox_Request_User_Id.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBox_Request_User_Id.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TextBox_Request_User_Id.Location = new System.Drawing.Point(62, 3);
+            this.TextBox_Request_User_Id.Name = "TextBox_Request_User_Id";
+            this.TextBox_Request_User_Id.Size = new System.Drawing.Size(182, 26);
+            this.TextBox_Request_User_Id.TabIndex = 7;
             // 
-            // Label_Request_PersonMajor
+            // Label_Request_User_Position
             // 
-            this.Label_Request_PersonMajor.AutoSize = true;
-            this.Label_Request_PersonMajor.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Request_PersonMajor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Label_Request_PersonMajor.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_Request_PersonMajor.Location = new System.Drawing.Point(3, 83);
-            this.Label_Request_PersonMajor.Name = "Label_Request_PersonMajor";
-            this.Label_Request_PersonMajor.Size = new System.Drawing.Size(53, 341);
-            this.Label_Request_PersonMajor.TabIndex = 4;
-            this.Label_Request_PersonMajor.Text = "학부";
-            this.Label_Request_PersonMajor.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label_Request_User_Position.AutoSize = true;
+            this.Label_Request_User_Position.BackColor = System.Drawing.Color.Transparent;
+            this.Label_Request_User_Position.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Label_Request_User_Position.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Request_User_Position.Location = new System.Drawing.Point(3, 465);
+            this.Label_Request_User_Position.Name = "Label_Request_User_Position";
+            this.Label_Request_User_Position.Size = new System.Drawing.Size(53, 310);
+            this.Label_Request_User_Position.TabIndex = 6;
+            this.Label_Request_User_Position.Text = "신분";
+            this.Label_Request_User_Position.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Label_Request_PersonPhoneNum
+            // ListBox_Request_User_Position
             // 
-            this.Label_Request_PersonPhoneNum.AutoSize = true;
-            this.Label_Request_PersonPhoneNum.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Request_PersonPhoneNum.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Label_Request_PersonPhoneNum.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_Request_PersonPhoneNum.Location = new System.Drawing.Point(3, 41);
-            this.Label_Request_PersonPhoneNum.Name = "Label_Request_PersonPhoneNum";
-            this.Label_Request_PersonPhoneNum.Size = new System.Drawing.Size(53, 42);
-            this.Label_Request_PersonPhoneNum.TabIndex = 2;
-            this.Label_Request_PersonPhoneNum.Text = "연락처";
-            this.Label_Request_PersonPhoneNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ListBox_Request_User_Position.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ListBox_Request_User_Position.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ListBox_Request_User_Position.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ListBox_Request_User_Position.ForeColor = System.Drawing.Color.Black;
+            this.ListBox_Request_User_Position.FormattingEnabled = true;
+            this.ListBox_Request_User_Position.ItemHeight = 18;
+            this.ListBox_Request_User_Position.Items.AddRange(new object[] {
+            "학부생",
+            "대학원생",
+            "교수",
+            "교직원",
+            "기술연구원",
+            "기타"});
+            this.ListBox_Request_User_Position.Location = new System.Drawing.Point(62, 468);
+            this.ListBox_Request_User_Position.Name = "ListBox_Request_User_Position";
+            this.ListBox_Request_User_Position.Size = new System.Drawing.Size(182, 304);
+            this.ListBox_Request_User_Position.TabIndex = 7;
+            this.ListBox_Request_User_Position.SelectedIndexChanged += new System.EventHandler(this.ListBox_Request_User_Position_SelectedIndexChanged);
             // 
-            // TextBox_Request_PersonPhoneNum
+            // Label_Request_User_Major
             // 
-            this.TextBox_Request_PersonPhoneNum.BackColor = System.Drawing.SystemColors.Window;
-            this.TextBox_Request_PersonPhoneNum.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox_Request_PersonPhoneNum.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.TextBox_Request_PersonPhoneNum.Location = new System.Drawing.Point(62, 44);
-            this.TextBox_Request_PersonPhoneNum.Name = "TextBox_Request_PersonPhoneNum";
-            this.TextBox_Request_PersonPhoneNum.Size = new System.Drawing.Size(182, 26);
-            this.TextBox_Request_PersonPhoneNum.TabIndex = 3;
+            this.Label_Request_User_Major.AutoSize = true;
+            this.Label_Request_User_Major.BackColor = System.Drawing.Color.Transparent;
+            this.Label_Request_User_Major.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Label_Request_User_Major.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Request_User_Major.Location = new System.Drawing.Point(3, 120);
+            this.Label_Request_User_Major.Name = "Label_Request_User_Major";
+            this.Label_Request_User_Major.Size = new System.Drawing.Size(53, 345);
+            this.Label_Request_User_Major.TabIndex = 4;
+            this.Label_Request_User_Major.Text = "학부";
+            this.Label_Request_User_Major.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // Label_Request_PersonName
+            // Label_Request_User_PhoneNum
             // 
-            this.Label_Request_PersonName.AutoSize = true;
-            this.Label_Request_PersonName.BackColor = System.Drawing.Color.Transparent;
-            this.Label_Request_PersonName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Label_Request_PersonName.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.Label_Request_PersonName.Location = new System.Drawing.Point(3, 0);
-            this.Label_Request_PersonName.Name = "Label_Request_PersonName";
-            this.Label_Request_PersonName.Size = new System.Drawing.Size(53, 41);
-            this.Label_Request_PersonName.TabIndex = 0;
-            this.Label_Request_PersonName.Text = "이름";
-            this.Label_Request_PersonName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Label_Request_User_PhoneNum.AutoSize = true;
+            this.Label_Request_User_PhoneNum.BackColor = System.Drawing.Color.Transparent;
+            this.Label_Request_User_PhoneNum.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Label_Request_User_PhoneNum.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Request_User_PhoneNum.Location = new System.Drawing.Point(3, 81);
+            this.Label_Request_User_PhoneNum.Name = "Label_Request_User_PhoneNum";
+            this.Label_Request_User_PhoneNum.Size = new System.Drawing.Size(53, 39);
+            this.Label_Request_User_PhoneNum.TabIndex = 2;
+            this.Label_Request_User_PhoneNum.Text = "연락처";
+            this.Label_Request_User_PhoneNum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // TextBox_Request_PersonName
+            // TextBox_Request_User_PhoneNum
             // 
-            this.TextBox_Request_PersonName.BackColor = System.Drawing.SystemColors.Window;
-            this.TextBox_Request_PersonName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TextBox_Request_PersonName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.TextBox_Request_PersonName.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.TextBox_Request_PersonName.Location = new System.Drawing.Point(62, 3);
-            this.TextBox_Request_PersonName.Name = "TextBox_Request_PersonName";
-            this.TextBox_Request_PersonName.Size = new System.Drawing.Size(182, 26);
-            this.TextBox_Request_PersonName.TabIndex = 1;
+            this.TextBox_Request_User_PhoneNum.BackColor = System.Drawing.SystemColors.Window;
+            this.TextBox_Request_User_PhoneNum.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBox_Request_User_PhoneNum.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TextBox_Request_User_PhoneNum.Location = new System.Drawing.Point(62, 84);
+            this.TextBox_Request_User_PhoneNum.Name = "TextBox_Request_User_PhoneNum";
+            this.TextBox_Request_User_PhoneNum.Size = new System.Drawing.Size(182, 26);
+            this.TextBox_Request_User_PhoneNum.TabIndex = 3;
             // 
-            // ListBox_Request_PersonMajor
+            // Label_Request_User_Name
             // 
-            this.ListBox_Request_PersonMajor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ListBox_Request_PersonMajor.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ListBox_Request_PersonMajor.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ListBox_Request_PersonMajor.ForeColor = System.Drawing.Color.Black;
-            this.ListBox_Request_PersonMajor.FormattingEnabled = true;
-            this.ListBox_Request_PersonMajor.ItemHeight = 18;
-            this.ListBox_Request_PersonMajor.Location = new System.Drawing.Point(62, 86);
-            this.ListBox_Request_PersonMajor.Name = "ListBox_Request_PersonMajor";
-            this.ListBox_Request_PersonMajor.Size = new System.Drawing.Size(182, 335);
-            this.ListBox_Request_PersonMajor.TabIndex = 5;
+            this.Label_Request_User_Name.AutoSize = true;
+            this.Label_Request_User_Name.BackColor = System.Drawing.Color.Transparent;
+            this.Label_Request_User_Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Label_Request_User_Name.Font = new System.Drawing.Font("나눔스퀘어 Bold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Request_User_Name.Location = new System.Drawing.Point(3, 41);
+            this.Label_Request_User_Name.Name = "Label_Request_User_Name";
+            this.Label_Request_User_Name.Size = new System.Drawing.Size(53, 40);
+            this.Label_Request_User_Name.TabIndex = 0;
+            this.Label_Request_User_Name.Text = "이름";
+            this.Label_Request_User_Name.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // TextBox_Request_User_Name
+            // 
+            this.TextBox_Request_User_Name.BackColor = System.Drawing.SystemColors.Window;
+            this.TextBox_Request_User_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TextBox_Request_User_Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.TextBox_Request_User_Name.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.TextBox_Request_User_Name.Location = new System.Drawing.Point(62, 44);
+            this.TextBox_Request_User_Name.Name = "TextBox_Request_User_Name";
+            this.TextBox_Request_User_Name.Size = new System.Drawing.Size(182, 26);
+            this.TextBox_Request_User_Name.TabIndex = 1;
+            // 
+            // ListBox_Request_User_Major
+            // 
+            this.ListBox_Request_User_Major.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ListBox_Request_User_Major.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ListBox_Request_User_Major.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ListBox_Request_User_Major.ForeColor = System.Drawing.Color.Black;
+            this.ListBox_Request_User_Major.FormattingEnabled = true;
+            this.ListBox_Request_User_Major.ItemHeight = 18;
+            this.ListBox_Request_User_Major.Items.AddRange(new object[] {
+            "기계",
+            "건축",
+            "디자인",
+            "메카트로닉스",
+            "산업경영",
+            "에너지신소재",
+            "응용화학",
+            "전기",
+            "전자",
+            "정보통신",
+            "컴퓨터",
+            "일학습병행",
+            "기타"});
+            this.ListBox_Request_User_Major.Location = new System.Drawing.Point(62, 123);
+            this.ListBox_Request_User_Major.Name = "ListBox_Request_User_Major";
+            this.ListBox_Request_User_Major.Size = new System.Drawing.Size(182, 339);
+            this.ListBox_Request_User_Major.TabIndex = 5;
+            this.ListBox_Request_User_Major.SelectedIndexChanged += new System.EventHandler(this.ListBox_Request_User_Major_SelectedIndexChanged);
             // 
             // GroupBox_Request_EquipmentInfo
             // 
@@ -293,7 +332,7 @@
             this.TableLayoutPanel_Request_Equipment.Controls.Add(this.Label_Request_UseCategory, 0, 2);
             this.TableLayoutPanel_Request_Equipment.Controls.Add(this.ListBox_Request_UseCategory, 0, 3);
             this.TableLayoutPanel_Request_Equipment.Controls.Add(this.Label_Request_EquipmentName, 0, 0);
-            this.TableLayoutPanel_Request_Equipment.Controls.Add(this.ListBox_Request_EquipmentName, 0, 1);
+            this.TableLayoutPanel_Request_Equipment.Controls.Add(this.ListBox_Request_Equipment_Name, 0, 1);
             this.TableLayoutPanel_Request_Equipment.Controls.Add(this.RichTextBox_Request_UsePurpose, 0, 5);
             this.TableLayoutPanel_Request_Equipment.Location = new System.Drawing.Point(17, 71);
             this.TableLayoutPanel_Request_Equipment.Name = "TableLayoutPanel_Request_Equipment";
@@ -342,10 +381,19 @@
             this.ListBox_Request_UseCategory.ForeColor = System.Drawing.Color.Black;
             this.ListBox_Request_UseCategory.FormattingEnabled = true;
             this.ListBox_Request_UseCategory.ItemHeight = 18;
+            this.ListBox_Request_UseCategory.Items.AddRange(new object[] {
+            "전공교과",
+            "융합학과",
+            "공학설계",
+            "졸업설계",
+            "외부대회",
+            "산학연",
+            "개인"});
             this.ListBox_Request_UseCategory.Location = new System.Drawing.Point(3, 393);
             this.ListBox_Request_UseCategory.Name = "ListBox_Request_UseCategory";
             this.ListBox_Request_UseCategory.Size = new System.Drawing.Size(241, 218);
             this.ListBox_Request_UseCategory.TabIndex = 7;
+            this.ListBox_Request_UseCategory.SelectedIndexChanged += new System.EventHandler(this.ListBox_Request_UseCategory_SelectedIndexChanged);
             // 
             // Label_Request_EquipmentName
             // 
@@ -360,18 +408,30 @@
             this.Label_Request_EquipmentName.Text = "사용장비";
             this.Label_Request_EquipmentName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // ListBox_Request_EquipmentName
+            // ListBox_Request_Equipment_Name
             // 
-            this.ListBox_Request_EquipmentName.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.ListBox_Request_EquipmentName.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ListBox_Request_EquipmentName.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.ListBox_Request_EquipmentName.ForeColor = System.Drawing.Color.Black;
-            this.ListBox_Request_EquipmentName.FormattingEnabled = true;
-            this.ListBox_Request_EquipmentName.ItemHeight = 18;
-            this.ListBox_Request_EquipmentName.Location = new System.Drawing.Point(3, 27);
-            this.ListBox_Request_EquipmentName.Name = "ListBox_Request_EquipmentName";
-            this.ListBox_Request_EquipmentName.Size = new System.Drawing.Size(241, 337);
-            this.ListBox_Request_EquipmentName.TabIndex = 5;
+            this.ListBox_Request_Equipment_Name.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ListBox_Request_Equipment_Name.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ListBox_Request_Equipment_Name.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.ListBox_Request_Equipment_Name.ForeColor = System.Drawing.Color.Black;
+            this.ListBox_Request_Equipment_Name.FormattingEnabled = true;
+            this.ListBox_Request_Equipment_Name.ItemHeight = 18;
+            this.ListBox_Request_Equipment_Name.Items.AddRange(new object[] {
+            "3D프린터 대형",
+            "3D프린터 소형",
+            "비금속레이저",
+            "워터젯",
+            "라우터",
+            "플로터",
+            "CNC",
+            "용접",
+            "선반/밀링",
+            "기타"});
+            this.ListBox_Request_Equipment_Name.Location = new System.Drawing.Point(3, 27);
+            this.ListBox_Request_Equipment_Name.Name = "ListBox_Request_Equipment_Name";
+            this.ListBox_Request_Equipment_Name.Size = new System.Drawing.Size(241, 337);
+            this.ListBox_Request_Equipment_Name.TabIndex = 5;
+            this.ListBox_Request_Equipment_Name.SelectedIndexChanged += new System.EventHandler(this.ListBox_Request_Equipment_Name_SelectedIndexChanged);
             // 
             // RichTextBox_Request_UsePurpose
             // 
@@ -462,10 +522,14 @@
             this.ListBox_Request_Item_OX.ForeColor = System.Drawing.Color.Black;
             this.ListBox_Request_Item_OX.FormattingEnabled = true;
             this.ListBox_Request_Item_OX.ItemHeight = 18;
+            this.ListBox_Request_Item_OX.Items.AddRange(new object[] {
+            "본인재료",
+            "센터구비재료"});
             this.ListBox_Request_Item_OX.Location = new System.Drawing.Point(3, 285);
             this.ListBox_Request_Item_OX.Name = "ListBox_Request_Item_OX";
             this.ListBox_Request_Item_OX.Size = new System.Drawing.Size(244, 60);
             this.ListBox_Request_Item_OX.TabIndex = 7;
+            this.ListBox_Request_Item_OX.SelectedIndexChanged += new System.EventHandler(this.ListBox_Request_Item_OX_SelectedIndexChanged);
             // 
             // Label_Request_Item_Material
             // 
@@ -570,11 +634,14 @@
             // DateTimePicker_Request_Item_Date
             // 
             this.DateTimePicker_Request_Item_Date.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.DateTimePicker_Request_Item_Date.CustomFormat = "yyyy-MM-dd";
             this.DateTimePicker_Request_Item_Date.Font = new System.Drawing.Font("나눔스퀘어", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.DateTimePicker_Request_Item_Date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DateTimePicker_Request_Item_Date.Location = new System.Drawing.Point(5, 473);
             this.DateTimePicker_Request_Item_Date.Name = "DateTimePicker_Request_Item_Date";
             this.DateTimePicker_Request_Item_Date.Size = new System.Drawing.Size(240, 26);
             this.DateTimePicker_Request_Item_Date.TabIndex = 12;
+            this.DateTimePicker_Request_Item_Date.ValueChanged += new System.EventHandler(this.DateTimePicker_Request_Item_Date_ValueChanged);
             // 
             // RichTextBox_Request_Item_PSText
             // 
@@ -603,6 +670,7 @@
             this.Button_Request_Add.Text = "신청완료";
             this.Button_Request_Add.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Button_Request_Add.UseVisualStyleBackColor = false;
+            this.Button_Request_Add.Click += new System.EventHandler(this.Button_Request_Add_Click);
             // 
             // Button_Request_Cancel
             // 
@@ -620,6 +688,17 @@
             this.Button_Request_Cancel.Text = "신청취소";
             this.Button_Request_Cancel.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.Button_Request_Cancel.UseVisualStyleBackColor = false;
+            // 
+            // Label_Request_DateTime
+            // 
+            this.Label_Request_DateTime.AutoSize = true;
+            this.Label_Request_DateTime.Font = new System.Drawing.Font("나눔스퀘어 ExtraBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.Label_Request_DateTime.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.Label_Request_DateTime.Location = new System.Drawing.Point(335, 12);
+            this.Label_Request_DateTime.Name = "Label_Request_DateTime";
+            this.Label_Request_DateTime.Size = new System.Drawing.Size(15, 21);
+            this.Label_Request_DateTime.TabIndex = 4;
+            this.Label_Request_DateTime.Text = " ";
             // 
             // UserControl_DadamRequest
             // 
@@ -653,29 +732,28 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox TextBox_RequestNum;
+        private System.Windows.Forms.TextBox TextBox_Request_Num;
         private System.Windows.Forms.Panel Panel_Request_Num;
-        private System.Windows.Forms.Label Label_RequestDate;
-        private System.Windows.Forms.Label Label_RequestNum;
-        private System.Windows.Forms.TextBox TextBox_RequestDate;
+        private System.Windows.Forms.Label Label_Request_Date;
+        private System.Windows.Forms.Label Label_Request_Num;
         private System.Windows.Forms.GroupBox GroupBox_Request_PersonInfo;
         private System.Windows.Forms.GroupBox GroupBox_Request_EquipmentInfo;
         private System.Windows.Forms.GroupBox GroupBox_Request_ItemInfo;
         private System.Windows.Forms.TableLayoutPanel TableLayoutPanel_Request_Person;
-        private System.Windows.Forms.Label Label_Request_PersonName;
-        private System.Windows.Forms.TextBox TextBox_Request_PersonName;
-        private System.Windows.Forms.Label Label_Request_PersonMajor;
-        private System.Windows.Forms.Label Label_Request_PersonPhoneNum;
-        private System.Windows.Forms.TextBox TextBox_Request_PersonPhoneNum;
-        private System.Windows.Forms.ListBox ListBox_Request_PersonMajor;
-        private System.Windows.Forms.Label Label_Request_PersonPosition;
-        private System.Windows.Forms.ListBox ListBox_Request_PersonPosition;
+        private System.Windows.Forms.Label Label_Request_User_Name;
+        private System.Windows.Forms.TextBox TextBox_Request_User_Name;
+        private System.Windows.Forms.Label Label_Request_User_Major;
+        private System.Windows.Forms.Label Label_Request_User_PhoneNum;
+        private System.Windows.Forms.TextBox TextBox_Request_User_PhoneNum;
+        private System.Windows.Forms.ListBox ListBox_Request_User_Major;
+        private System.Windows.Forms.Label Label_Request_User_Position;
+        private System.Windows.Forms.ListBox ListBox_Request_User_Position;
         private System.Windows.Forms.TableLayoutPanel TableLayoutPanel_Request_Equipment;
         private System.Windows.Forms.Label Label_Request_UsePurpose;
         private System.Windows.Forms.Label Label_Request_UseCategory;
         private System.Windows.Forms.ListBox ListBox_Request_UseCategory;
         private System.Windows.Forms.Label Label_Request_EquipmentName;
-        private System.Windows.Forms.ListBox ListBox_Request_EquipmentName;
+        private System.Windows.Forms.ListBox ListBox_Request_Equipment_Name;
         private System.Windows.Forms.RichTextBox RichTextBox_Request_UsePurpose;
         private System.Windows.Forms.TableLayoutPanel TableLayoutPanel_Request_ItemInfo;
         private System.Windows.Forms.Label Label_Request_Item_Num;
@@ -694,5 +772,8 @@
         private System.Windows.Forms.RichTextBox RichTextBox_Request_Item_PSText;
         private System.Windows.Forms.Button Button_Request_Add;
         private System.Windows.Forms.Button Button_Request_Cancel;
+        private System.Windows.Forms.Label Label_Request_User_Id;
+        private System.Windows.Forms.TextBox TextBox_Request_User_Id;
+        private System.Windows.Forms.Label Label_Request_DateTime;
     }
 }
